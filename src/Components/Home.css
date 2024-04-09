@@ -1,0 +1,161 @@
+.image1-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image1-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  text-align: left;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 50%; /* Added max-width to prevent text from crossing the center */
+}
+
+.text-container h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.text-container p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.contact-button {
+  margin-left: 20px;
+}
+
+.service-button,
+.contact-button {
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.service-button:hover,
+.contact-button:hover {
+  background-color: rgb(38, 47, 177);
+}
+
+.image1-container img {
+  width: 100%;
+  height: 650px; /* Set your desired height here */
+  display: block;
+}
+
+/* about section */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Adjusted to make img1 and text column equal width */
+  grid-gap: 20px;
+  align-items: flex-start;
+}
+
+.left-column {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}
+
+.right-column {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.right-column img {
+  width: 100%; /* Adjusted width to take full width */
+  height: auto;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.text {
+  text-align: justify;
+}
+
+.head {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.txt {
+  text-align: justify;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 19px;
+}
+
+/* Styles for individual images */
+.col-md-3 img {
+  width: 100%;
+  height: auto;
+}
+
+/* Adjustments for the grid layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Adjusted to create 4 equal columns */
+  grid-gap: 20px;
+  justify-content: center; /* Center the grid items horizontally */
+  margin-top: 20px; /* Added margin for spacing */
+}
+
+/* Optional: Add styles for responsiveness */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  }
+}
+.name {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 15px;
+ 
+  font-size: 3.2em; /* Adjust the font size as needed */
+}
+.name1 {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 15px;
+
+  font-size: 2.6em; /* Adjust the font size as needed */
+}
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns with equal width */
+  grid-gap: 10px; /* Adjust the gap between images */
+}
+
+.image-container img {
+  width: 100%; /* Ensure all images take up the full width of their grid cell */
+  height: auto; /* Maintain aspect ratio */
+}
+/* Adjust the position and styling of buttons for smaller screens */
+@media (max-width: 768px) {
+  .text-container {
+    max-width: 80%; /* Adjust the max-width for better button positioning */
+    text-align: center; /* Center-align text for better readability */
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .contact-button,
+  .service-button {
+    margin: 10px auto; /* Center-align buttons and add spacing between them */
+    display: block; /* Ensure buttons take full width on smaller screens */
+  }
+}
